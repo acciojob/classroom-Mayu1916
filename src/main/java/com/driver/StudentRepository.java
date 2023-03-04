@@ -69,7 +69,7 @@ public class StudentRepository {
 
     //8
     public String deleteTeacherByName(String teacher){
-        List<String> list = new ArrayList<>();
+        List<String> list = teacherStudentList.get(teacher);
         for (int i=0;i<list.size();i++){
             studentMap.remove(list.get(i));
         }
